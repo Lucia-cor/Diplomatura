@@ -7,3 +7,6 @@ li{
     font-family: 'Franklin Gothic Medium';
     
 }
+h2{
+    background: linear-gradient(135deg, #bfd255 0%,#8eb92a 34%,#bfd255 52%,#72aa00 71%,#72aa00 86%,#72aa00 89%,#72aa00 99%,#9ecb2d 100%);
+}
