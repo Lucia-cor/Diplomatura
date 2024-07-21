@@ -1,0 +1,29 @@
+.Contenedor{
+    border: solid black;
+    background-color: rgb(240, 240, 155);
+    display:flex;
+    justify-content: space-between;
+}
+
+.verde{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+}
+.naranja{
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.celeste{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+}

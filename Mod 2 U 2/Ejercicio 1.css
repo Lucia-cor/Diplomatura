@@ -1,0 +1,35 @@
+#Contenedor {
+    background-color: rgb(177, 212, 182);
+    border: solid black;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+#verde{
+    width: 200px;
+    height: 200px ;
+    border: solid black;
+    background-color:rgb(105, 225, 105);
+    text-align: center;
+}
+
+#naranja{
+    width: 200px;
+    height: 200px ;
+    border: solid black;
+    background-color:rgb(218, 170, 47);
+    text-align: center;
+}
+
+#violeta{
+    width: 200px;
+    height: 200px ;
+    border: solid black;
+    background-color:rgb(131, 37, 160);
+    text-align: center;
+}
+    
