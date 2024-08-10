@@ -15,6 +15,9 @@
     border: solid black;
     background-color:rgb(105, 225, 105);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #naranja{
@@ -23,6 +26,9 @@
     border: solid black;
     background-color:rgb(218, 170, 47);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #violeta{
@@ -31,5 +37,8 @@
     border: solid black;
     background-color:rgb(131, 37, 160);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
     

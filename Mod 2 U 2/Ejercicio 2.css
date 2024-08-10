@@ -17,6 +17,9 @@
     color: white;
     text-align:center;
     background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rojo{
@@ -27,6 +30,9 @@
     color: white;
     text-align: center;
     background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .azul{
@@ -37,4 +43,7 @@
     color: white;
     text-align: center;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

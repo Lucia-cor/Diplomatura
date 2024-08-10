@@ -11,6 +11,9 @@
     width: 200px;
     font-size: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .naranja{
     background-color: orange;
@@ -18,6 +21,10 @@
     width: 200px;
     font-size: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .celeste{
@@ -26,4 +33,7 @@
     width: 200px;
     font-size: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
