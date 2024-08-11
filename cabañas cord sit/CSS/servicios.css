@@ -1,0 +1,116 @@
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    background-color: rgb(240, 227, 210);
+}
+
+header {
+    background-color: rgb(204, 204, 177);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20px;
+    justify-content: center;
+}
+h1 {
+    color: rgb(84, 81, 81);
+    font-size: 45px;
+    font-weight: 300 bold;
+    font-style: italic;
+    display: inline-flex;
+    bottom: 20px;
+    margin-left: 15px;
+}
+
+nav {
+    background-color: rgb(199, 179, 126);
+    height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 80px;
+    padding-top: 8px;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: rgb(84, 81, 81);
+}
+nav ul li a:hover{
+    color: beige;
+}
+
+nav ul li a.activo {
+    color: rgb(104, 72, 13);
+}
+main h2{
+    font-size: 35px;
+    color: rgb(209, 174, 129);
+    text-align: center;
+}
+.holder{
+    max-width: 950px;
+    margin: 0 auto;
+}
+.servicio{
+    border: 1.5px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    margin: 10px 10px 10px 10px;   
+}
+.servicio:hover{
+    box-shadow: 3px 4px 5px rgb(154, 149, 138);
+    background-color: rgba(195, 185, 171, 0.867);
+    font-size: 20px;
+}
+.servicio .info h4{
+    color: rgb(84, 81, 81);
+    font-weight: 400;
+    font-style: oblique;
+    text-decoration: underline;
+
+}
+.servicio .info p{
+    font-size: 17px;
+    font-style: italic;
+}
+.servicio img{
+    border-radius: 20px;
+    opacity: 80%;
+
+}
+footer{
+    background-color:rgb(235, 218, 170);
+    clear: both;
+    padding: 5px;
+    margin-top: 0;
+    border-top: 5px rgb(212, 205, 205) solid;
+
+}
+footer .columna{
+    display: flex;
+    justify-content: space-around;
+}
+footer .columna ul{
+    list-style: none;
+    font-size: 17px;   
+}
+footer .columna .informacion{
+    line-height: 40px;
+}
+
+
+
+
