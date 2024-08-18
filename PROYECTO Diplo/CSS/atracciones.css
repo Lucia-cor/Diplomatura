@@ -27,7 +27,6 @@ nav {
     height: 30px;
     font-size: 15px;
     text-transform: uppercase;
-    width: 100%;
 }
 
 nav ul {
@@ -52,45 +51,59 @@ nav ul li a:hover{
 nav ul li a.activo {
     color: rgb(104, 72, 13);
 }
-
 .holder{
-    max-width: 950px;
+    max-width: 1000px;
     margin: 0 auto;
+}  
+.introduccion h2{
+    font-size: 35px;
+    color: rgb(209, 174, 129);
+    text-align: center;
+}
+.introduccion p{
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+.atracciones{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.atraccion{
+    border: 2px black solid;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    height: 450px;
+    width: 300px;
+    padding: 5px; 
+    box-shadow: 5px 5px 10px rgb(209, 201, 201);  
+}
+.atraccion img{
+    padding-left: 20%;
+}
+.atraccion h3{
+    text-align: center;
+    color: rgb(84, 81, 81);
+    font-weight: 400;
+    font-style: oblique;
+    text-decoration: underline;
+}
+.atraccion p{
+    text-align: center;
+}
+.atraccion:hover{
+    box-shadow: 3px 4px 5px rgb(154, 149, 138);
+    background-color: rgba(195, 185, 171, 0.867);
+    transform: scale(1.05);
+    transition: all o.3s ease-in-out;
 }
 
-#contcarrusel{
-    height: 700px;
-    overflow-y: hidden;
-}
-.carrusel{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding-top: 5px;
-}
-.carrusel img{
-    height: 700px;
-}
-
-.flechas{
-    position: absolute;
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 65%;
-}
-.carrusel .flechas a{
-    color: bisque;
-}
-.carrusel .flechas i:hover{
-    transform: scale(1.5);
-    color: rgb(123, 121, 117);
-}
 footer{
     background-color:rgb(235, 218, 170);
     clear: both;
     padding: 5px;
-    margin-top: 5px;
+    margin-top: 0;
     border-top: 5px rgb(212, 205, 205) solid;
 
 }
@@ -105,4 +118,3 @@ footer .columna ul{
 footer .columna .informacion{
     line-height: 40px;
 }
-
