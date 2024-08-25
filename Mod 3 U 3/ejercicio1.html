@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 1. unidad 3</title>
+</head>
+<body>
+    <script>
+        const nombre = prompt('ingrese su nombre','');
+        const distancia = parseInt (prompt('ingrese la distancia en metros que debe recorrer', ''));
+        
+        if (distancia <= 1000) {
+            document.write (`Hola ${nombre}, deberás viajar a PIE`)
+            console.log (`Hola ${nombre}, deberás viajar a PIE`);
+        } else if (distancia > 1000 || distancia <= 10000) {
+            document.write (`Hola ${nombre}, deberás viajar en BICI`)
+            console.log (`Hola ${nombre}, deberás viajar en BICI`);
+        } else if (distancia > 10000 || distancia <= 30000) {
+            document.write (`Hola ${nombre}, deberás viajar en COLECTIVO`)
+            console.log (`Hola ${nombre}, deberás viajar en COLECTIVO`);
+        } else if (distancia > 30000 || distancia <= 100000){
+            document.write (`Hola ${nombre}, deberás viajar en AUTO`)
+            console.log (`Hola ${nombre}, deberás viajar en AUTO`);
+        } else if (distancia > 100000){ 
+            document.write (`Hola ${nombre}, deberás viajar en AVION`)
+            console.log (`Hola ${nombre}, deberás viajar en AVION`);
+        }
+            
+    
+
+
+
+
+        
+    </script>
+</body>
+</html>
