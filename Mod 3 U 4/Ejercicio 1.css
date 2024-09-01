@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.caja1{
+    height: 200px;
+    width: 200px;
+    border: black solid;
+    background-color: #7fffd4;
+    
+}
+.caja2{
+    height: 200px;
+    width: 200px;
+    border: black solid;
+    background-color: #5cb99a ;
+}
+.caja3{
+    height: 200px;
+    width: 200px;
+    border: rgb(0, 0, 0) solid;
+    background-color: #678d80;
+}

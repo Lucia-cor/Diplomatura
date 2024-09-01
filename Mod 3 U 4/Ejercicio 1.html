@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 1</title>
+    <link rel="stylesheet" href="Ejercicio 1.css">
+</head>
+<body>
+    <div class="caja1">
+
+    </div>
+    <div class="caja2">
+    </div>
+
+    <div class="caja3">
+
+    </div>
+    <script>
+        const cajauno = document.getElementsByTagName('caja1');
+        const cajados = document.getElementsByTagName('caja2');
+        const cajatres = document.getElementsByTagName('caja3');
+        let body = document.getElementsByTagName('body')
+        
+
+        cajauno.addEventListener('click', function() {
+            body.style.backgroundColor = '#7fffd4';
+        });
+        cajados.addEventListener('click', function(){
+            body.style.backgroundColor = '#5cb99a';
+
+        });
+        cajatres.addEventListener('click' , function() {
+            body.style.backgroundColor = '#678d80' 
+        });
+
+        
+
+
+    </script>
+</body>
+</html>
