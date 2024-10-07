@@ -10,11 +10,16 @@
 <body>
     <script>
 
-        let numeros = [10, 20, 30, 40, 50, 60];
+        const numeros = [10, 20, 30, 40, 50, 60];
+        let mayor = 0
 
         for (let n = 0; n < numeros.length; n++) {
-            console.log('hay ' + numeros[n])
+            if (numeros[n] > mayor) {
+                mayor = numeros[n];
+            }
+            
         };
+        console.log(`el mayor de los ${numeros} es ${mayor}` )
 
     </script>
 

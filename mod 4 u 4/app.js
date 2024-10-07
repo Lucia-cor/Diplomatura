@@ -4,10 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var session = require('express-session');
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var nosotrosRouter = require('./routes/nosotros')
-var serviciosRouter = require('./routes/servicios')
+const { title } = require('process');
 
 var app = express();
 
@@ -21,15 +22,38 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/nosotros', nosotrosRouter)
-app.use('/servicios', serviciosRouter)
+app.use(session({
+  secret: 'jclcccscp539trvchpaar',
+  resave: false,
+  saveUninitialized: true
+}));
 
-app.get('/galeria', function(req,res){
-  res.send('Aqui estará la galeria de fotos')
+app.get('/', function (req, res) {
+  var conocido= Boolean(req.session.nombre);
 
+  res.render('index', {
+    title: 'Sesiones en Express Js',
+    conocido: conocido,
+    nombre: req.session.nombre
+  });
+
+});
+
+app.post('/ingresar', function (req, res){
+  if (req.body.name){
+
+    req.session.nombre = req.body.nombre
+  }
+  res.redirect('/');
 })
+
+app.get('/sali', function (req, res){
+  req.session.destroy();
+  res.redirect('/');
+})
+
+//app.use('/', indexRouter);
+//app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
